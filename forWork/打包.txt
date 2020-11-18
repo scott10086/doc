@@ -1,0 +1,62 @@
+单独打包
+config 
+{
+    "cipUrl": "http://192.168.30.177:80/CIP/",
+
+    "isMenu": false,
+    "useVerifyCode": false,
+    "pckType": 1,    
+    "isPermission": false,
+    
+    "hostConfig": {
+        "BIP_HEAD": "BIP_CUST",
+        "BIP_AFTER": "Bip",
+        "PRODUCT_HOST": "BIP_PRODUCT"
+    }
+}
+angular.json  "defaultProject": "singleBuildProject"
+
+
+                            "deployUrl": "http://192.168.30.177:8110/customIframe/",
+                            "baseHref": "http://192.168.30.177:8110/",
+
+门户打包
+config {
+  "cipUrl": "http://172.16.100.210:80/CIP/",
+  "isMenu": false,
+  "useVerifyCode": false,
+  "pckType": 2,    
+  "isPermission": true,
+}
+angular.json  "defaultProject": "gatewayBuildProject"
+
+
+/home/marketing/fep
+10.20.35.79:8007
+
+
+手动部署：
+rm -rf /home/web/custom/*
+unzip custom.zip -d ../custom/  
+自动部署：
+unzip custom.zip  
+
+
+发布包
+* pri ---- http://192.168.30.43:8087/repository/web-npm-group/
+  prih --- http://192.168.30.43:8087/repository/web-npm-hosted/
+npm地址仓库 切到host仓库  
+然后用admin登录进去  
+npm login
+admin/admin123
+npm  publish
+
+rm -rf /home/web/gateway/*
+unzip gateway.zip -d ../gateway/
+rm -rf /home/web/static/*
+unzip static.zip -d ../static/
+rm -rf /home/web/workflow/*
+unzip workflow.zip -d ../workflow/
+rm -rf /home/web/custom/*
+unzip custom.zip -d ../custom/
+

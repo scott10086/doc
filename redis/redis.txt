@@ -1,0 +1,33 @@
+ redis
+
+/-----部署redis-----/
+1.创建redis用户（redis的根目录在home下）(或者直接新建文件夹redis，在redis下面继续新建文件夹file)
+2.将redis-3.0.5.tar.gz拷贝至/home/redis/file下解压 
+3.进入/home/redis/file/redis-3.0.5下执行命令 make（可能需要在服务器上安装gcc）
+			安装gcc      yum -y install gcc
+			make时报如下错误：
+			zmalloc.h:50:31: error: jemalloc/jemalloc.h: No such file or directory
+			zmalloc.h:55:2: error: #error "Newer version of jemalloc required"
+			make[1]: *** [adlist.o] Error 1
+			make[1]: Leaving directory `/data0/src/redis-2.6.2/src'
+			make: *** [all] Error 2
+			原因是jemalloc重载了Linux下的ANSI C的malloc和free函数。解决办法：make时添加参数。
+			执行      make MALLOC=libc			
+			make完成会提示进行  make test测试  通常不测试可以使用  直接忽略
+4.将start-redis-server.sh和start-redis-sentinel.sh拷入/home/redis/file/redis-3.0.5/src下
+5.将redis-10167.conf和sentinel-10167.conf拷入/home/redis/file/share_box下（路径不存在的自行创建），
+  同时将这两个文件里ip为172.16.101.67替换成自己服务器地址即可	
+6.启动：进入/home/redis/file/redis-3.0.5/src下分别执行  ./start-redis-sentinel.sh 和 ./start-redis-server.sh  即可
+
+
+/-----找redis地址-----/
+/webapps/AITeller/WEB-INF/classes/redis.propertperties
+#redis.sentinels=对应地址
+
+/-----清redis-----/
+133，132      /root/tools/redis/file/redis-3.0.5/src
+134           /home/redis/file/redis-3.0.5/src
+【客户中心 134  AITeller数据库清redis      172.16.101.67    redis redis】
+./redis-cli        flushdb
+
+

@@ -1,0 +1,134 @@
+123=========================================================== 账号 ===========================================================
+
+/************************************************/ CIP系统登录账号
+
+奇瑞：http://192.168.30.177:100/#/login   100005/123456
+服务鉴权：http://192.168.30.177:8093/#/login   123/pwd1
+统一机构：http://192.168.30.177:8094/#/login   100005/123456
+身份认证：http://192.168.30.177:8091/#/login  100001/bosent123   100005/bosent123
+客户中心：http://172.16.100.134:8388/#/login  111020/123@@@456
+65poc：http://172.16.100.65:8081/#/login   100005/123456
+
+/************************************************/ linux无锡环境
+
+安全前台：    172.16.30.177   22       root/123.con
+客户中心：    172.16.100.134(133) 22   root/123.con  | 123.com      /root/tools/tomcat_my/bin
+常熟安保：    172.16.100.177  22       aiteller/aiteller  或 root/123.con  | 123.com      /home/aiteller/tomcat_stable/bin
+poc:          172.16.100.65   22       root/root@1234
+jenkins:      172.16.101.67   22       jenkins/jenkins
+30.177:       192.168.30.177   22      root/123.con
+30.37:        192.168.30.37   22       root/123.con   aiteller/aiteller
+30.62:        192.168.30.62   22       root/123.con
+
+/************************************************/ 常熟版本
+
+fep_cs  AITeller-ng-resource    部署端口：84开发  99测试    包含模块：服务鉴权/身份认证/安全平台/统一机构：
+注意：
+服务鉴权：  84后台： http://192.168.30.172:8666     99后台： http://192.168.30.172:8667    AITeller：无
+身份认证和安全平台：  84/99后台： http://172.16.100.177:8199    AITeller：http://192.168.30.177:84/AITeller/
+统一机构：  84/99后台： http://192.168.30.173:8299    AITeller：http://192.168.30.177:84/AITeller/
+
+/************************************************/ 研发版本
+
+fep_dev  AITeller-ng-resource-basic    部署端口：96开发   包含模块：身份认证/安全平台/统一机构：
+
+/************************************************/ 数据库
+
+常熟：jdbc:mysql://192.168.30.62:3306/aiteller_csrcb      root/123456
+研发版本：jdbc:mysql://192.168.30.37:3306/aiteller_csrcb      aiteller/aiteller2019
+客户中心CIP：jdbc:mysql://172.16.100.132:3306      root/123456 
+客户中心后台：jdbc:mysql://172.16.101.99:3306      root/1234     
+
+/************************************************/ 南京VPN账号-红区使用
+
+vpnuser uytx85@s
+vpnuser01 tx73xs#q
+vpnuser02 xmje5x!2
+vpnuser03 nh6x#sxs
+vpnuser04 xe34cx&s
+vpnuser05 etx84h!u
+
+/************************************************/ 无锡VPN账号-红区使用
+
+uisftech1 3HOEpxway
+uisftech2 vYsDN4BC7
+uisftech3 fNcasztd2
+uisftech4 ojd3m9BDR
+uisftech5 Juynkw9hL
+uisftech6 T4kWfeu0B
+
+/************************************************/ git
+
+git:  http://192.168.30.41/users/sign_in   wang_chang@hoperun.com/密码8个1
+
+/************************************************/ pha
+
+http://pha.uisftech.com/    wang_chang/jf81
+
+/************************************************/ 办公系统
+
+办公系统
+考勤   http://pom.hoperun.com:8187/attp/www/index.html#/login      002001132/Jf61
+云之家   https://www.yunzhijia.com/home/?m=open&a=login&redirectUrl=%2Fim%2Fxiaoxi  jf16
+
+/************************************************/ jenkins
+
+客户中心：http://172.16.101.67:8787/jenkins/    admin/admin
+
+/************************************************/ svn
+
+URL：https://10.50.40.188:1443/svn/khzx(最新) 
+svn用户名和密码：xuhaifeng/123、lankaiting/123、wangchang/123，
+
+/************************************************/ 华为云IP:port
+
+10.20.35.79
+172.16.65.12:31978
+/home/csedocker/dockerimages/yxls/fep/web
+
+sudo sh build.sh
+
+sudo docker images
+
+/************************************************/ sublime
+
+sgbteam
+Single User License
+EA7E-1153259
+8891CBB9 F1513E4F 1A3405C1 A865D53F
+115F202E 7B91AB2D 0D2A40ED 352B269B
+76E84F0B CD69BFC7 59F2DFEF E267328F
+215652A3 E88F9D8F 4C38E3BA 5B2DAAE4
+969624E7 DC9CD4D5 717FB40C 1B9738CF
+20B3C4F1 E917B5B3 87C38D9C ACCE7DD8
+5F7EF854 86B9743C FADC04AA FB0DA5C0
+F913BE58 42FEA319 F954EFDD AE881E0B
+
+/************************************************/ xxxxx
+
+
+润和-冯亮:
+http://172.16.101.163:8110/   	对公
+http://172.16.101.163:8220/		对私合版
+http://172.16.101.163:8330/		研发
+http://172.16.101.163:8440/		奇瑞
+
+润和-冯亮:
+私服：
+172.16.100.26   	root/Passw0rd
+前端：
+172.16.101.163		root/Passw0rd
+
+git : http://172.16.101.154/
+
+"{ label: '"&C14&"', key: '"&B14&"', styleWidth: { 'width': '150px' }, inputType: 'input' },"
+
+
+
+        console.log(params.httpService[params.injectName] + "---" + params.injectName)
+
+        
+                console.log(params.injectName)
+                console.log(backEndMessage)
+
+

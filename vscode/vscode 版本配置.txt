@@ -1,0 +1,38 @@
+vscode版本配置
+
+版本: 1.29.1 (system setup)
+提交: bc24f98b5f70467bc689abf41cc5550ca637088e
+日期: 2018-11-15T19:13:36.375Z
+Electron: 2.0.12
+Chrome: 61.0.3163.100
+Node.js: 8.9.3
+V8: 6.1.534.41
+架构: x64
+
+
+
+{
+    "git.path": "D:/software/Git/bin/git.exe",
+    "workbench.iconTheme": "easy-icons",
+    "window.zoomLevel": 0,
+    "files.autoSave": "afterDelay",
+    // Turns auto fix on save on or off, or defines which rules (e.g. `no-var-keyword`) to auto fix on save.
+    "tslint.autoFixOnSave": true,
+    // 用于快速修复的首选引用样式: "single" (单引号)、"double" (双引号) 或 "auto" (从已有 import 语句中推测引号类型)。要求 TypeScript >= 2.9
+    "javascript.preferences.quoteStyle": "single",
+    // 保存时设置文件的格式。格式化程序必须可用，不能自动保存文件，并且不能关闭编辑器。
+    "editor.formatOnSave": true,
+    "workbench.startupEditor": "newUntitledFile",
+    "git.autofetch": true,
+    "typescript.updateImportsOnFileMove.enabled": "never",
+    "editor.codeActionsOnSave": {
+        "source.organizeImports": true
+    },
+    "[scss]": {
+        "editor.defaultFormatter": "sibiraj-s.vscode-scss-formatter"
+    }
+}
+
+
+
+

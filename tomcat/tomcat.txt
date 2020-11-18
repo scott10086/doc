@@ -1,0 +1,6 @@
+ tomcat
+
+/-----tomcat启停AITeller-----/
+/home/aiteller/tomcat_stable/bin     ./startup.sh      ./shutdown.sh  
+
+

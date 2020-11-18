@@ -1,0 +1,11 @@
+dos操作命令
+快速删除文件繁多的文件夹 记事本输入并改后缀  .bat
+DEL /F /A /Q \\?\%1 
+RD /S /Q \\?\%1
+
+获取文件列表   dir
+清除       cls
+循环删除-针对当前目录(bat)       DEL /F /A /Q \\?\%1    RD /S /Q \\?\%1   del /s /q E:\abc
+启动某个程序(bat)   
+runas /user:administrator cmd /k
+start /d "C:\Program Files (x86)\Google\Chrome\Application" chrome.exe --args --disable-web-security  --user-data-dir

@@ -1,0 +1,60 @@
+ HTML
+
+==================================================================================== 下拉框
+<uisftech-dropdown [options]="genders" formControlName="gender"></uisftech-dropdown>
+<p-dropdown [options]="genders" formControlName="gender"></p-dropdown>
+<p-dropdown filter="true"  formControlName="zujName"  [options]="select_1"></p-dropdown>
+==================================================================================== 提示信息
+<div class="ui-message ui-messages-error" *ngIf="!ngForm.controls[obj.key].valid&&ngForm.controls[obj.key].dirty">
+    <span class="fa ui-icon-error"></span>&nbsp;
+    <span *ngIf="ngForm.controls[obj.key].errors?.required">{{obj.label}}不能为空</span>
+    <span *ngIf="!ngForm.controls[obj.key].errors?.required">
+      <span *ngIf="ngForm.controls[obj.key].errors?.scError">{{ngForm.controls[obj.key].errors?.scError.errorMsg}}</span>
+      <span *ngIf="!ngForm.controls[obj.key].errors?.scError">
+        <span *ngIf="ngForm.controls[obj.key].errors?.spaceError">{{ngForm.controls[obj.key].errors?.spaceError.errorMsg}}</span>
+        <span *ngIf="!ngForm.controls[obj.key].errors?.spaceError">
+          <span *ngIf="ngForm.controls[obj.key].errors?.maxlength">{{obj.label}}最大长度为{{ngForm.controls[obj.key].errors?.maxlength.requiredLength}}位</span>
+          <span *ngIf="!ngForm.controls[obj.key].errors?.maxlength">
+            <span *ngIf="obj.validatorKey&&ngForm.controls[obj.key].errors[obj.validatorkey]">{{ngForm.controls[obj.key].errors[obj.validatorkey].errorMsg}}</span>
+          </span>
+        </span>
+      </span>
+    </span>
+</div>
+==================================================================================== 图标
+<ng-template let-col let-item="rowData" let-ri="rowIndex" pTemplate="body">
+  <button (click)="detail(item)" class="btn" type="button"><i class="fa ui-icon-local-library"></i>详情 </button>
+  <button (click)="update(item)" class="btn" type="button"><i class="fa ui-icon-edit"></i>修改 </button>
+  <button (click)="delete(item)" class="btn" type="button"><i class="fa ui-icon-delete"></i>删除 </button>
+</ng-template>
+==================================================================================== 提示信息 
+<p-growl [(value)]="msgs"></p-growl>
+==================================================================================== loading 
+<uisftech-loading [blocked]="loadingShow"></uisftech-loading>
+==================================================================================== 确定框 
+<p-confirmDialog header="提示" icon="fa fa-question-circle" width="425" acceptLabel="确定" rejectLabel="取消"></p-confirmDialog>
+==================================================================================== dataTable 首行按钮
+<div class="ui-panel-operations">
+  <button class="query-div-button" pButton type="button" (click)="add_type()" label="新增"></button>
+  <div class="clearfloat"></div>
+</div>
+==================================================================================== 改dom样式
+关于带“-”的dom元素，如果要改变样式用此方式  [style]="{'color':'red','font-size':'20px'}"
+==================================================================================== dataTable拉伸
+<p-dataTable [value]="tableData" [first]="pageParams.first" frozenWidth="10%" scrollable="true" selectionMode="single"
+          [(selection)]="selectedList" emptyMessage="没有符合此条件的信息" resizableColumns="true" columnResizeMode="expand">
+          <p-column [style]="{ 'width': '38px'}" selectionMode="single"></p-column>
+==================================================================================== 权限按钮注入
+[funPermission]="'custOffitionViewSearch001'"
+==================================================================================== 获取日期
+Date curDate = new Date();
+var preDate = new Date(curDate.getTime() - 24*60*60*1000); //前一天
+var nextDate = new Date(curDate.getTime() + 24*60*60*1000); //后一天
+==================================================================================== 模板变量
+<input #input><br> {{input.value}}
+==================================================================================== 
+==================================================================================== 
+==================================================================================== 
+
+
+

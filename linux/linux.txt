@@ -1,0 +1,36 @@
+linux
+移动+重命名：mv dist dist.bak    
+
+删除文件夹（无需确认）：rm -rf folder  
+
+删除文件（需要确认）：rm dist.zip    
+
+查看文件列表：ls/ll      
+
+清除log：clear
+
+创建日期：dd=`date +%d-%m-%Y`     调用方式： ${dd}
+
+创建文件夹：mkdir -p /home/web/web_dev/${dd}
+
+打压缩包（dist文件夹压缩成dist.tar.gz并放到指定位置）：tar -czf /home/web/web_dev/${dd}/dist.tar.gz dist
+
+过滤删除文件：find /home/web/web_dev -mtime +10 -exec rm -Rf {} \;
+
+复制并覆盖（dist文件夹复制到web_dev文件夹中）：scp -r /home/AITeller-ng-custom/dist/ root@172.16.100.133:/home/web/web_dev/
+
+循环修改文件夹里所有文件权限：//chmod -R 755 ./folder  （加上参数-R 就是遍历路径内的所有文件）
+
+显示正在运行的进程：ps -ef|grep java
+
+停止某个进程：kill -9 进程号
+
+启动jar包：nohup java -jar cip-main.jar > nohup.out 2>&1 &
+
+******启动jar包
+******cd /root/build_target/ch/06-05-2019
+******java -jar  bosent-baseline-build-V1.1.1_CUST_20181123-executable.jar >customerCenter.log 2>&1 &
+
+查看log
+tailf nohup.out
+

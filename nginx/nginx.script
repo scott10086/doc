@@ -1,0 +1,8 @@
+nginx
+
+/-----启停nginx，部署前端-----/
+nginx -s stop     
+nginx -s reload
+nginx      
+
+

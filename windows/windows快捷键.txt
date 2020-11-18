@@ -1,0 +1,8 @@
+ windows快捷键
+ctrl+D 删除
+ctrl+C 复制
+ctrl+A 全选
+ctrl+X 剪贴 
+ctrl+Z 粘贴
+
+

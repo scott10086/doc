@@ -1,0 +1,15 @@
+chrome 跨域
+
+设置chrome跨域问题    --disable-web-security --user-data-dir --allow-running-insecure-content --disable-web-security
+
+#跨域
+ --args --disable-web-security --user-data-dir=C:\MyChromeDevUserData
+
+脚本启动    脚本内容 .bat
+runas /user:administrator "cmd /k
+start /d "C:\Program Files (x86)\Google\Chrome\Application" chrome.exe --args --disable-web-security  --user-data-dir
+
+#bat 脚本
+ start /d "C:\Program Files (x86)\Google\Chrome\Application"  chrome.exe --args --disable-web-security --user-data-dir=C:\MyChromeDevUserData
+
+

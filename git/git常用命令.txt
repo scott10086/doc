@@ -1,0 +1,49 @@
+git常用命令
+ git常用命令
+1. 如何将github上的项目拉到本地？   git clone xxxxx
+2. 如何创建新的分支？   git checkout -b xxx
+3. 如何切换分支？   git checkout xxx
+4. 如何删除本地分支？   git branch -d xxx
+5. 删除分支失败，如何强制删除？     git branch -D xxx
+6. 如何拉取新的代码？    git pull origin xxx
+7. 如何将工作区的改动放到暂存区？   git add xxx        git add .
+8. 如何将暂存区的文件提交到本地分支？    git commit -m "xxx"
+9. 如何将本地分支的提交推到远程？     git push origin xxx
+10. 如何查看提交历史？ git log   git reflog    git log --name-only    git log --name-status 
+11. 如何查看工作区的修改？    git diff
+12. 工作区的修改不想要了怎么办？     git checkout -- xxx
+13. 暂存区的修改不想要了怎么办？    git reset HEAD xxx
+14. 已经提交到本地仓库的文件不想要了怎么办？   git reset --hard commit_id
+15. 已经提交到本地仓库的文件怎么回退到工作区再修改？     git reset HEAD~1
+16. 如果合并代码出现冲突了怎么办？
+   i. 找到冲突的文件，将冲突的代码改成想要的
+   ii. 执行git add xxx, git commit -m "xxx", git push origin xxx
+17. 合并某一次提交    git cherry-pick 62ecb3 
+18. 合并某个分支上的一系列commits
+   在一些特性情况下，合并单个commit并不够，你需要合并一系列相连的commits。这种情况下就不要选择cherry-pick了，rebase 更适合。还以上例为例，假设你需要合并feature分支的commit76cada ~62ecb3 到master分支。
+   首先需要基于feature创建一个新的分支，并指明新分支的最后一个commit：
+   [plain] view plain copy
+   git checkout -bnewbranch 62ecb3  
+   然后，rebase这个新分支的commit到master（--ontomaster）。76cada^ 指明你想从哪个特定的commit开始。
+   [plain] view plain copy
+   git rebase --ontomaster 76cada^  
+   得到的结果就是feature分支的commit 76cada ~62ecb3 都被合并到了master分支。
+
+场景：文件名称过长：
+fatal: unable to stat '****/***/******/****/*****/****/****.**': Filename too long。这个错误是git报的错。
+在项目所在目录下面运行以下命令即可，我是用的第一种（鼠标右键--> Git Bash Here --> git config --system core.longpaths true）
+可以使用以下命令来修复：
+方法一： git config --system core.longpaths true
+方法二：git config core.longpaths true
+（文件名字过长不识别 git config --global core.longpaths true）
+查看设置状态： git config core.longpaths 
+
+@angular/compiler-cli@5.2.11 requires typescript@'>=2.4.2 <2.7.0' but 2.4.0 was found instead.
+Using this version can result in undefined behaviour and difficult to debug problems.
+Please run the following command to install a compatible version of TypeScript.
+    npm install typescript@'>=2.4.2 <2.7.0'
+To disable this warning run "ng set warnings.typescriptMismatch=false".
+解决办法： npm install typescript@2.4.2
+
+
+

@@ -1,0 +1,26 @@
+/*********************************************20190701***********************************************/
+/***********************************************/ ng
+
+参考：https://www.cnblogs.com/ckAng/p/6693702.html
+
+npm install -g angular-cli
+ng version     ng help     ng new PROJECT_NAME     cd PROJECT_NAME      ng serve
+ng serve --host 0.0.0.0 --port 4201 --live-reload-port 49153
+# 这是生产构建
+ng build --target=production --environment=prod
+ng build --prod --env=prod       ng build --prod
+# 这是开发构建
+ng build --target=development --environment=dev
+ng build --dev --e=dev     ng build --dev     ng build
+防止内存溢出命令
+node --max_old_space_size=16384 ./node_modules/@angular/cli/bin/ng build
+
+
+/***********************************************/ nrm
+
+安装node.js
+配环境变量  node -version   npm  -version
+安装cnpm    npm install -g cnpm --registry=https://registry.npm.taobao.org
+安装nrm    npm install -g nrm
+nrm ls
+nrm use ... 切换连接的中央仓库   选中的前面有*号

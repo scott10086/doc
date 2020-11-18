@@ -1,0 +1,100 @@
+VScode 插件
+
+Angular 8 Snippets    支持开发angular快捷键
+Auto Close Tag      自动闭合标签
+Auto Import    自动导入
+vscode-exports-autocomplete  自动导出
+Auto Rename Tag   自动命名
+Change Case    大小写切换
+Chinese (Simplified) Language Pack for Visual Studio Code    汉化vscode
+Code Runner  运行代码
+dart-import  自动删除无效导入
+Easy icons  文件图标
+EditorConfig for Visual Studio Code   定义缩进等等
+Enki Theme  主题vscode
+Format Files README  
+Git Merger  管理git merger
+GitLens — Git supercharged  管理git 提交 拉取代码
+JavaScript  快捷使用JS
+JavaScript Snippet Pack   格式化JS
+vscode-npm-import-package-version   显示依赖包版本
+Path Intellisense   文件路径提示
+Sass    格式化sass文件
+SCSS Formatter  格式化scss文件
+SCSS IntelliSense  
+tslint   文件TS格式化标准
+TypeScript Import Sorter   导入的文件按名称排序
+
+
+vs常用公共插件
+Auto Close Tag 自动闭合标签
+Auto Rename Tag 自动重命名标签
+AutoFileName 自动联想文件名
+Autoprefixer 自动兼容前缀
+Auto Close Tag 自动闭合标签
+Beautify 编辑器格式化
+Better Comments 通过使用警告、信息、待办事项等注释来改进代码注释!
+Bookmarks 代码导航
+Bracket Pair Colorizer
+Chinese (Simplified) Language Pack for Visual Studio Code
+Debugger for Chrome
+Docker
+EaseServer
+ES7 React/Redux/GraphQL/React-Native snippets
+ESLint
+exports autocomplete
+HTML CSS Support
+HTML Snippets
+indent-rainbow 缩进标识
+Indenticator 缩进标识
+IntelliJ IDEA Key Bindings for Visual Studio Code
+IntelliSense for CSS class names in HTML
+VS Code JavaScript (ES6) snippets
+Node Exec
+Node modules resolve
+Node.js Extension Pack
+Node.js Modules Intellisense
+npm
+npm Intellisense
+npm Intellisense
+Open in GitHub, Bitbucket, Gitlab, VisualStudio.com !
+Path Intellisense
+Polacode
+Prettier Now
+Search node_modules
+TODO Highlight
+Types auto installer
+Typings auto installer
+Color Info 颜色信息
+样式处理相关
+Live Sass Compiler
+Live Server
+px2rem
+React Native Tools
+Resource Peek
+Sass
+Sass Lint
+SCSS IntelliSensemrmlnc.vscode-scss预览版
+scss-lint
+scss-scan
+IntelliSense for CSS, SCSS class names in HTML and Slim 智能感知在html中写的样式名称:
+css-auto-prefix
+Custom CSS and JS Loaderbe5invis.vscode-custom-css预览版
+VUE开发相关
+Vetur
+webpack
+Vue 2 Snippets
+Vue VSCode Snippets
+微信开发相关
+minapp-vscode
+vscode weapp api
+vscode wxml
+vscode-icons
+vscode-stylesheet-beautify
+WeApp Snippetse
+版本管理
+Git History
+GitLens — Git supercharged
+ 
+
+
