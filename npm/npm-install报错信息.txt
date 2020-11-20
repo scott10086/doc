@@ -1,0 +1,3 @@
+no git binary found in $path
+
+当执行npm install时，就报了 no git binary found in $path ，这个是因为没有配置git的环境变量
