@@ -23,6 +23,8 @@ this.extendTool.extend(true,{}, this.obj);
 ==================================================================================== 管道用法
 {{key | list:'分隔符'}}
 {{templateContent.custInfo?.cancelFlag | codeValuePie:cancelFlags :','}}
+{{item.budgetAmount | percent:'1.1-4'}}
+{{item.budgetAmount|currency:' ':false:'1.0-6'}}
 ==================================================================================== 强制更新，防止抛错
 private tabPanelCD: ChangeDetectorRef  //   强制更新，防止抛错
 // 强制更新，防止抛错
