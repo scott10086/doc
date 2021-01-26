@@ -1,0 +1,43 @@
+请求
+
+    const param = {
+      batchNo:this.batchNo,
+      doStatus:'1',
+      expressTypeAfter:this.form3.value['expressType'],
+      expressNoAfter:this.form3.value['expressNo'],
+      mailDateAfter:this.form3.value['mailDate'],
+      opinionAfter:this.form3.value['opinion']
+    };
+    this.uisftechLoadingsService.show();
+    this.customManageService.doMortgageFiling(param).subscribe(data => {
+      this.uisftechLoadingsService.hidden();
+      if (data.Service.Header.RetCode === '000000') {
+        this.msgs = [{ severity: 'success', summary: '提示', detail: '提交成功！' }];
+      } else {
+        this.msgs = [{ severity: 'error', summary: '提示', detail: data.Service.Header.RetMsg }];
+      }
+    }, errror => {
+      this.uisftechLoadingsService.hidden();
+      this.msgs = [{ severity: 'error', summary: '提示', detail: '服务调用失败！' }];
+    });
+
+
+
+service.ts
+
+  // 抵押备案导出
+  selectMortgageFilingDown(params,extendContent?){
+      const param = this.httpService.handleBasicParams(params, selectMortgageFilingDown,extendContent);
+      return this.httpService.ajax(CONFIG_HTTP_URL, param);
+  }
+
+
+  trancode.ts
+
+
+// 个人结清批量邮寄导入
+export const importPersonBatchSettlEmail = {
+  serviceCode: 'importPersonBatchSettlEmail',
+  tranCode: 'almhost/importPersonBatchSettlEmail',
+  serviceName: 'importPersonBatchSettlEmail',
+};
