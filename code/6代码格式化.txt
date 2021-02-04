@@ -1,0 +1,16 @@
+格式化插件：
+html
+ts
+js
+json
+css
+scss
+快捷构建插件：
+snippets类
+lint类
+import类
+path类
+git类
+icon类
+autoCloseTag
+autoRenameTag
